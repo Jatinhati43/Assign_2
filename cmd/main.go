@@ -12,8 +12,8 @@ func main() {
 	fmt.Print("Enter a line of text: ")
 	scanner := bufio.NewScanner(os.Stdin)
 	if scanner.Scan() {
-		line := scanner.Text()
-		count := number.CountWords(line) // use correct package and function name
+		input := scanner.Text()                       
+		count := line.CountWords(input)             
 		fmt.Printf("Word count: %d\n", count)
 	}
 }
